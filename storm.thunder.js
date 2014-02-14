@@ -54,6 +54,11 @@ storm.thunder = (function() {
     return canvas;
   };
 
+
+  CanvasConverter.prototype.getTaintFreeImage = function(img) {
+  	// ...
+	};
+
   CanvasConverter.prototype.getImageData_ = function() {
     this.context = this.canvas.getContext('2d');
     this.context.drawImage(this.elem, 0, 0, this.canvas.width, this.canvas.height);
